@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic</title>
+</head>
+<style>
+    .outer-block{
+        width: 80px;
+        border:1px solid    #000; 
+        margin: 20px;
+    }
+    .red, .yellow, .Green{
+        border-radius: 60px;
+        height: 90px;
+        width: 80px;
+        border: 1px solid #000;
+    }
+</style>
+<body>
+    <div class="outer-block">
+        <div class="red" id="red">
+
+        </div>
+        <div class="yellow" id="yellow">
+
+        </div>
+        <div class="Green" id="Green">
+
+        </div>
+    </div>
+        <button onclick="getcolor('red')">RED</button>
+        <button onclick="getcolor('yellow')">yellow</button>
+        <button onclick="getcolor('Green')">Green</button>
+    <script>
+        function getcolor(color){
+            switch(color){
+                case 'red':{
+                    document.getElementById('red').style.backgroundColor='red';
+                    document.getElementById('yellow').style.backgroundColor='white';
+                    document.getElementById('Green').style.backgroundColor='white';
+                    break;
+                }
+                case 'yellow':{
+                    document.getElementById('red').style.backgroundColor='white';
+                    document.getElementById('yellow').style.backgroundColor='yellow';
+                    document.getElementById('Green').style.backgroundColor='white';
+                    break;
+                }
+                case 'Green':{
+                    document.getElementById('red').style.backgroundColor='white';
+                    document.getElementById('yellow').style.backgroundColor='white';   
+                    document.getElementById('Green').style.backgroundColor='Green';
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>login</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-dark bg-dark">
+        <div class="container">
+           <div class="navbar-header">
+               <a href="lifestyle.html" class="navbar-brand">Lifestyle store</a>
+           </div>
+           <form class="d-flex"> 
+            <i class="material-icons">person</i><a href="signup.html" style="color: white;">Signup</a>
+            <i class="material-icons">login</i><a href="login.html" style="color: white;">Login</a>
+          </form>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="row row_style">
+                <div class="col-sm-6">
+                    <div class="panel panel-primary">
+                        <div class="panel panel-heading">
+                            <h3>Login</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="text-warning">
+                                <p>login to make purchase</p>
+                            </div> 
+                            <form class="container" style="margin-bottom: 20px;">
+                                <div class="col-6">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                </div>
+                                <div class="col-6 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                                <div>
+                                    <a href="product.html" class="btn btn-primary btn-lng active" type="submit" value="submit">login</a>
+                                  
+                                </div>
+                            </form> 
+                        </div>
+                        <div class="panel-footer">
+                            <p>Don't have any account?<a href="signup.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+          <script>
+               var user=[{
+                   first name: 'srikanth',
+                   last name: 'V',
+                   address: {
+                       area: Begumpeat,
+                       city: Hyderabad,
+                   },
+                   emali: 'vilasakavisrikanth@gmail.com',
+                   password: 'Srikanth',
+               },
+               {
+                   first name: 'vaseem',
+                   last name: 'sk',
+                   address: {
+                       area: Begumpeat,
+                       city: Hyderabad,
+                   },
+                   emali: 'skvaseem@gmail.com',
+                   password: 'vaseem',
+               },
+
+               {
+                   first name: 'manoj',
+                   last name: 'ch',
+                   address: {
+                       area: Begumpeat,
+                       city: Hyderabad,
+                   },
+                   emali: 'chmanoj@gmail.com',
+                   password: 'manoj',
+               },
+               ];
+          </script>
+    <footer>
+        <!-- <div class="container"> -->
+            <div class="fixed-bottom">
+                <div class="row align-iteams-center justify-content-cnter"> 
+                    <p>
+                        "Copyright Lifestyle store. All Rights Reserved" and "contact us:+91 9000000000"
+                    </p>
+                 </div>
+          </div>
+         <!-- </div> -->
+
+
+
+      </footer>
+</body>
+</html>

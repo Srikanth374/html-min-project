@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    select{
+        width: 200px;
+        height: 30px;
+    }
+</style>
+<body>
+    <select id="list" onchange="getselectvalue();">
+        <option value="select">-->select option--></option>
+        <option value="vivo">v17</option>
+        <option value="oppo">reno3</option>
+        <option value="mi">note 9 pro</option>
+        <option value="samsung">m20</option>
+        <option value="one+">one pluse</option>
+    </select>
+    <button>delete</button>
+    <div id="par" onchange="getselectvalue">
+        <p>dbjkhcdfhilfjlcnx.chdiohsklcnc.,x ,x.nkdlvhk n </p>
+
+    </div>
+    <script>
+        function getselectvalue()
+        {
+            var selectvalue=document.getElementsById("list").value;
+            var displaytext=d.options[d.selecetiveindex].text;
+            document.getElementById("par").value=displaytext;
+            console.log(selectvalue);
+            console.log(displaytext);
+        }
+    </script>
+</body>
+</html>
