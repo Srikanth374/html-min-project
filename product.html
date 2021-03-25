@@ -19,7 +19,7 @@
            <form class="d-flex"> 
             <i class="material-icons">add_shopping_cart</i><a href="cart.html" style="color: white;">Cart</a>
             <i class="material-icons">settings</i><a href="settings.html" style="color: white;">settings</a>
-            <i class="material-icons">logout</i><a href="logout.html" style="color: white;">Logout</a>
+            <i class="material-icons">logout</i><a href="login.html" style="color: white;">Logout</a>
           </form>
         </div>
     </nav>
@@ -156,6 +156,12 @@
                                                 </div>
         </div>
     </div>
+    <script>
+      var userData =  localStorage.getItem('dl-user');
+    //   console.log(userData);
+        userData = JSON.parse(userData);
+        // console.log(userData);
+    </script>
         
         <footer>
         <!-- <div class="container"> -->
